@@ -1,0 +1,145 @@
+/**
+ * Main Stylesheet
+ * WFH Request Project
+ */
+
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === BODY === */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3b40e5 0%, #0499f6 100%);
+}
+
+/* === CONTAINER === */
+.container {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* === HEADING === */
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+/* === BUTTONS CONTAINER === */
+.buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+/* === BUTTON BASE === */
+button {
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+    min-width: 100px;
+}
+
+/* === YES BUTTON === */
+#yesBtn {
+    background: #4CAF50;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#yesBtn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+/* === NO BUTTON === */
+#noBtn {
+    background: #f44336;
+    color: white;
+    position: relative;
+    transition: all 0.15s ease-out;
+    z-index: 10000; /* Make sure it's always on top */
+}
+
+/* === CELEBRATION === */
+.celebration {
+    display: none;
+    margin-top: 30px;
+}
+
+.celebration.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.celebration img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.celebration h2 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.celebration p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    
+    .celebration h2 {
+        font-size: 2em;
+    }
+}
