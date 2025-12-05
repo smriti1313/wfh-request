@@ -17,7 +17,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #3b40e5 0%, #0499f6 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    overflow: hidden; /* Hide any scrollbars */
 }
 
 /* === CONTAINER === */
@@ -29,6 +30,8 @@ body {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     max-width: 500px;
     width: 90%;
+    position: relative;
+    overflow: visible; /* Allow button to move outside */
 }
 
 /* === HEADING === */
