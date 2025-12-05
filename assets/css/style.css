@@ -83,7 +83,7 @@ button {
     background: #f44336;
     color: white;
     position: relative;
-    transition: all 0.15s ease-out;
+    transition: all 0.10s ease-out;
     z-index: 10000; /* Make sure it's always on top */
 }
 

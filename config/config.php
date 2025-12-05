@@ -6,7 +6,7 @@
  */
 
 // Site settings
-define('SITE_NAME', 'WFH Request');
+define('SITE_NAME', 'Tough life');
 define('SITE_URL', 'http://wfh-request.test'); // Herd auto-generates .test domains
 
 // Asset paths
