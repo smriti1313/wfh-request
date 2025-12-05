@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 /**
  * WFH Request Page
  * Main entry point for the application
@@ -29,4 +29,4 @@ include 'includes/header.php';
 <?php
 
 include 'includes/footer.php';
-?> -->
+?>
